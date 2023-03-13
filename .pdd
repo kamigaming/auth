@@ -1,0 +1,4 @@
+--source=.
+--verbose
+--exclude vendor/**
+--rule min-words:5
