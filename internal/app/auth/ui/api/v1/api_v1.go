@@ -4,10 +4,12 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/kamigaming/auth/internal/app/auth/ui"
 )
 
 // API version 1.
 type APIv1 struct {
+	login ui.HTTPEntry
 }
 
 // Create new APIv1.
@@ -17,5 +19,6 @@ func NewAPIv1() APIv1 {
 
 func (api *APIv1) Route() http.Handler {
 	router := chi.NewRouter()
+	router.Mount("/login", api.login.Route())
 	return router
 }

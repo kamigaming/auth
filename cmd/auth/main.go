@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	v1 "github.com/kamigaming/auth/internal/app/auth/ui/http/api/v1"
+	v1 "github.com/kamigaming/auth/internal/app/auth/ui/api/v1"
 )
 
 func main() {
