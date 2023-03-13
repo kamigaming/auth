@@ -1,4 +1,4 @@
-name: Vertify
+name: Verify
 
 on:
   pull_request:
