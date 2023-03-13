@@ -16,9 +16,7 @@ type APIv1 struct {
 // Create new APIv1.
 func NewAPIv1() APIv1 {
 	return APIv1{
-		// @todo #2:30m Add login http entry and inject it into apiv1.
-		login: nil,
-		// @todo #2:30m Add signup http entry and inject it into apiv1.
+		login:  nil,
 		signup: nil,
 	}
 }
